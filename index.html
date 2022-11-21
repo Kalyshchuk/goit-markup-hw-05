@@ -18,7 +18,9 @@
                 <a href="/" class="logo">Web<span class="title">Studio</span>
                 </a>
                 <ul class="site list">
-                    <li class="item"><a class="link current" href="/">Студія</a></li>
+                    <li class="item"><a class="link current" href="/">
+                        Студія
+                    </a></li>
                     <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="item"><a class="link" href="/">Контакти</a></li>
                 </ul>
@@ -47,8 +49,18 @@
             <section class="section overlay">
                 <div class="container">
                     <h1 class="section-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="button" type="button">Замовити послугу</button>
+                    <button class="button" data-modal-open type="button">Замовити послугу</button>
                 </div>
+                
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <div class="cross">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </section>
             <section class="list strong">
                 <div class="container">
@@ -99,6 +111,7 @@
                     <ul class="desc-list list">
                         <li class="foto">
                             <img src="./images/img.jpg" alt="Десктопні додатки" width="370">
+                            <!-- текст поверх картинки -->
                             <div class="desktop">
                                 <p class="applications">
                                     Десктопні додатки
@@ -106,10 +119,20 @@
                             </div>
                         </li>
                         <li class="foto">
-                            <img src="./images/img(1).jpg" alt="Мобільна версія" width="370">
+                            <img src="./images/img(1).jpg" alt="Мобільні додатки" width="370">
+                            <div class="desktop">
+                                <p class="applications">
+                                    Мобільні додатки
+                                </p>
+                            </div>
                         </li>
                         <li class="foto">
-                            <img src="./images/img(2).jpg" alt="Графічний дизайн" width="370">
+                            <img src="./images/img(2).jpg" alt="Дизайнерські рішення" width="370">
+                            <div class="desktop">
+                                <p class="applications">
+                                    Дизайнерські рішення
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -368,5 +391,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
