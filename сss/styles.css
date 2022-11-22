@@ -389,7 +389,6 @@ body {
     margin-right: 0;
 }
 
-
 .main-antenna {
     display: flex;
     height: 120px;
@@ -1016,8 +1015,7 @@ img {
     transition: transform 250ms linear;
 }
 
-
-.main-website .website {
+main-website .website {
     margin: 0;
     padding: 63px 24px;
 
