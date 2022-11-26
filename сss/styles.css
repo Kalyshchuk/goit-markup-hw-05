@@ -208,14 +208,9 @@ body {
     color: var(--accent-color);
 }
 
-.site-auth .link-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .site-auth .main-mail:hover,
 .site-auth .main-mail:focus {
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-auth .main-mail {
@@ -225,6 +220,7 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--second-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-auth .link-item {
@@ -237,6 +233,7 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--second-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-auth .link-icon {
@@ -344,7 +341,7 @@ body {
 .button:hover,
 .button:focus {
     background-color: #188CE8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -583,7 +580,6 @@ img {
 .elements:hover {
     background-color: var(--accent-color);
     fill: #ffffff;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .elements {
@@ -593,6 +589,9 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -644,6 +643,7 @@ img {
     justify-content: center;
     padding: 0;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company {
@@ -655,9 +655,8 @@ img {
 
 .main-company:hover,  
 .main-company:focus {
-    border: 1px solid var(--accent-color);
+    border-color: 1px solid var(--accent-color);
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* секція контакти */
@@ -703,19 +702,16 @@ img {
 .address-list .map:hover,
 .address-list .map:focus {
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list .mail:hover,
 .address-list .mail:focus {
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list .tel:hover,
 .address-list .tel:focus {
     color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .map {
@@ -728,6 +724,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .map {
@@ -744,6 +741,7 @@ img {
     color: var(--address-contact-color);
     
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -754,6 +752,7 @@ img {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -803,9 +802,8 @@ img {
     margin-right: 0;
 }
 
-.networks:hover {
+.instagram:hover {
     background-color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-link {
@@ -820,7 +818,7 @@ img {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* сторінка ПОРТФОЛІО*/
@@ -874,10 +872,12 @@ img {
 .hero-button .btn:focus {
     color: var(--button-text-color);
     background-color: #188CE8;
-    transition: color 250ms linear;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button .btn {
@@ -920,10 +920,6 @@ img {
     cursor: pointer;
 }
 
-.after-cards {
-    padding: 20px 24px;
-}
-
 .cards {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -935,6 +931,10 @@ img {
 
 .border {
     display: block;
+}
+
+.after-cards {
+    padding: 20px 24px;
 }
 
 .after-cards {
@@ -963,9 +963,9 @@ img {
     text-decoration: none;
 }
 
-.link-card {
+/* .link-card {
     position: relative;
-}
+} */
 
 .heading {
     margin: 0;
@@ -992,9 +992,14 @@ img {
 
 /* тект поверх картинки */
 
-.cards:hover .main-website {
+.cards:hover .primary-website {
     /* прозорість мінімальна */
     opacity: 1;
+}
+
+.primary-website {
+    position: relative;
+    overflow: hidden;
 }
 
 .main-website {
@@ -1007,11 +1012,12 @@ img {
     /* прозорість на максимумі */
     opacity: 0;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-second .cards:hover .main-website {
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
 }
 
 .main-website .website {
